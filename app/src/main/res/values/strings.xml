@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CoolCartoon</string>
+    <string name="title_home">Home</string>
+    <string name="title_community">Community</string>
+    <string name="title_shelf">Shelf</string>
+    <string name="title_me">Me</string>
+</resources>
