@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/include_1"
+        layout="@layout/toolbar"
+        >
+    </include>
+
+    <RelativeLayout
+
+        android:id="@+id/head_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <ImageView
+            android:id="@+id/head_img_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/head_img_id"
+            android:text="专区板块" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#B6B9C0" />
+
+    <RelativeLayout
+        android:id="@+id/relative_id_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:id="@+id/imageView_phto_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/logo_id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_toEndOf="@+id/imageView_phto_1"
+            android:text="可米酱专贴"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/headline_id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快来围观可米酱卖萌"
+            android:textSize="18dp"
+            android:layout_below="@+id/logo_id_1"
+            android:layout_alignStart="@+id/logo_id_1" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#B6B9C0" />
+    <RelativeLayout
+        android:id="@+id/relative_id_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:id="@+id/imageView_phto_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/logo_id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_toEndOf="@+id/imageView_phto_2"
+            android:text="日常聊天"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/headline_id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/logo_id_2"
+            android:layout_below="@+id/logo_id_2"
+            android:text="快来围观可米酱卖萌"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#B6B9C0" />
+    <RelativeLayout
+        android:id="@+id/relative_id_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:id="@+id/imageView_phto_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/logo_id_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="48dp"
+            android:layout_toEndOf="@+id/imageView_phto_3"
+            android:text="精品图区"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/logo_id_3"
+            android:layout_below="@+id/logo_id_3"
+            android:text="快来围观可米酱卖萌"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#B6B9C0" />
+
+</LinearLayout>
