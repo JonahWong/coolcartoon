@@ -6,3 +6,15 @@
 /build
 /captures
 .externalNativeBuild
+
+*.bin
+
+*.lock
+
+.gradle/4.1-milestone-1/fileHashes/fileHashes.bin
+
+*.bin
+
+.gradle/4.1-milestone-1/fileHashes/fileHashes.bin
+
+.gradle/4.1-milestone-1/fileHashes/fileHashes.lock
