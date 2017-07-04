@@ -6,7 +6,7 @@
 /build
 /captures
 .externalNativeBuild
-.gradle
+/.gradle
 
 .gradle/4.1-milestone-1/fileHashes/fileHashes.bin
 
