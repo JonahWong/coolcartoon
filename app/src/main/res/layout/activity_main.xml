@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainContent"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tarena.com.coolcartoon.MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="0dp"
@@ -33,3 +34,21 @@
 
 
 </android.support.constraint.ConstraintLayout>
+=======
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listview_id"
+            tools:listheader="@layout/cardview_hade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+>>>>>>> origin/master
