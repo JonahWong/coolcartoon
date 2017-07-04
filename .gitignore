@@ -6,3 +6,5 @@
 .externalNativeBuild
 .gradle
 /.idea/**
+
+*.txt
