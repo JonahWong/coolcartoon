@@ -67,4 +67,9 @@ public class CommunityFragment extends Fragment implements CommunityView {
 
 
       }
+
+      @Override
+      public void showToast(String message) {
+
+      }
   }
