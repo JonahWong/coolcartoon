@@ -29,6 +29,12 @@ android {
 
     packagingOptions{
         exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.properties'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        exclude 'META-INF/maven/com.google.code.gson/gson/pom.xml'
+        exclude 'META-INF/maven/com.google.code.gson/gson/pom.properties'
     }
 }
 
@@ -75,5 +81,8 @@ dependencies {
     //bmob-sms ：Bmob单独为短信服务提供的包
     //    compile 'cn.bmob.android:bmob-sms:1.0.1'
     implementation 'com.android.support:support-v4:26.0.0-beta2'
+<<<<<<< HEAD
     implementation 'com.android.support:appcompat-v7:26.0.0-beta2'
+=======
+>>>>>>> bd726436f2f0ff9aed13667f9bd4a19f09cebf0f
 }
