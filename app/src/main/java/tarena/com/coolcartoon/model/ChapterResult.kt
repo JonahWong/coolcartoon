@@ -7,5 +7,4 @@ data class ChapterResult(var total: Int,
                          var comicName: String,
                          var chapterList: ArrayList<Chapter>?,
                          var limit: Int,
-                         var skip: Int) {
-}
+                         var skip: Int)
