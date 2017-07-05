@@ -5,6 +5,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
+import cn.bmob.v3.Bmob
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     private fun initBmob() {
         //第一：默认初始化
-//        Bmob.initialize(this, "58bf634c1b5818826b69950858be925e");
+        Bmob.initialize(this, "58bf634c1b5818826b69950858be925e");
         // 注:自v3.5.2开始，数据sdk内部缝合了统计sdk，开发者无需额外集成，传渠道参数即可，不传默认没开启数据统计功能
         //Bmob.initialize(this, "Your Application ID","bmob");
 
