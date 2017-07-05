@@ -1,88 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-<include
-    android:id="@+id/include_1"
-    layout="@layout/toolbar"
-   ></include>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_1"
+        layout="@layout/toolbar"></include>
+
 
     <RelativeLayout
-        android:layout_below="@id/include_1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <ImageView
-        android:layout_marginStart="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/phto_item" />
-
-    <TextView
-
-        android:id="@+id/item_name"
-        android:textSize="15dp"
-        android:text="可米酱"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/phto_item"
-        android:layout_toEndOf="@+id/phto_item"
-        android:layout_marginBottom="11dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/item_lv"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/item_name" />
-
-    <ImageView
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/item_vip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/item_like"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="【可米酷漫画】社区准则"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/phto_item"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp"
-        android:id="@+id/item_headline" />
-
-    <TextView
-
-        android:text="文明和谐的次元环境，请和可米酱一起威武"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/item_body_text"
-        android:layout_below="@+id/item_headline"
-        android:layout_alignStart="@+id/phto_item"
-        android:layout_marginTop="15dp" />
-
-    <ScrollView
-        android:id="@+id/item_body_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/item_body_text"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/include_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp">
 
-</RelativeLayout>
+        <ImageView
+
+            android:id="@+id/phto_tiezi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/ic_touxiang" />
 
 
+        <TextView
+             android:layout_toRightOf="@id/phto_tiezi"
+            android:id="@+id/tiezi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_headline"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/phto_item"
+            android:text="可米酱"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/tiezi_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tiezi_name"
+            app:srcCompat="@drawable/ic_lv" />
+        <ImageView
+            android:layout_toRightOf="@id/tiezi_lv"
+            android:id="@+id/tiezi_vip"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/tiezi_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_zan" />
+
+        <TextView
+            android:id="@+id/tiezi_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phto_item"
+            android:layout_marginTop="15dp"
+            android:text="【可米酷漫画】社区准则"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/tiezi_body_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/phto_tiezi"
+            android:layout_below="@+id/tiezi_headline"
+            android:layout_marginTop="15dp"
+            android:text="文明和谐的次元环境，请和可米酱一起威武" />
+
+        <ImageView
+            android:id="@+id/tiezi_body_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tiezi_body_text" />
     </RelativeLayout>
+</RelativeLayout>

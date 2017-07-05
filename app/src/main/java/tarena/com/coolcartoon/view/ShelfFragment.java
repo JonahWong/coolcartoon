@@ -12,6 +12,7 @@ import tarena.com.coolcartoon.view.interfaces.ShelfView;
  */
 
 public class ShelfFragment extends Fragment implements ShelfView {
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -5,4 +5,5 @@ package tarena.com.coolcartoon.view.interfaces;
  */
 
 public interface CommunityView {
+    void showToast(String message);
 }
