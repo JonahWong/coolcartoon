@@ -15,16 +15,16 @@ import tarena.com.coolcartoon.model.responses.ChapterResponse
 interface CoolCartoonApi {
 
     @GET("category")
-    fun categories(@Query("key") key: String = BuildConfig.COOL_CARTOON_APPLICATION_KEY): Observable<BookCategoryResponse>
+    fun categories(@Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<BookCategoryResponse>
 
     @GET("chapter")
-    fun chapters(@Query("comicName") comicName: String, @Query("skip") skip: Int = 0, @Query("key") key: String = BuildConfig.COOL_CARTOON_APPLICATION_KEY): Observable<ChapterResponse>
+    fun chapters(@Query("comicName") comicName: String, @Query("skip") skip: Int = 0, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<ChapterResponse>
 
     @GET("book")
-    fun books(@Query("type") type: String, @Query("skip") skip: Int = 0, @Query("finish") finish: Int = -1, @Query("key") key: String = BuildConfig.COOL_CARTOON_APPLICATION_KEY): Observable<BookResultResponse>
+    fun books(@Query("type") type: String, @Query("skip") skip: Int = 0, @Query("finish") finish: Int = -1, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<BookResultResponse>
 
     @GET("chapterContent")
-    fun comicPix(@Query("comicName") comicName: String, @Query("id") chapterId: Int, @Query("key") key: String = BuildConfig.COOL_CARTOON_APPLICATION_KEY): Observable<ChapterComics>
+    fun comicPix(@Query("comicName") comicName: String, @Query("id") chapterId: Int, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<ChapterComics>
 
 
 }
