@@ -33,13 +33,13 @@ public class MeFragment extends Fragment implements MeView, View.OnClickListener
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.mine_layout, container, false);
-//        if (Build.VERSION.SDK_INT >= 21) {
-//            View decorView = getActivity().getWindow().getDecorView();
-//            int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-//            decorView.setSystemUiVisibility(option);
-//            getActivity().getWindow().setStatusBarColor(Color.TRANSPARENT);
-//        }
+        if (Build.VERSION.SDK_INT >= 21) {
+            View decorView = getActivity().getWindow().getDecorView();
+            int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+            decorView.setSystemUiVisibility(option);
+            getActivity().getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
         item9 = view.findViewById(R.id.item2);
         item9.setOnClickListener(this);
 
