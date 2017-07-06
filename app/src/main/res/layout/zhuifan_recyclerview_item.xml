@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/ZhuiFan_Item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ZhuiFan_Item_Img"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ZhuiFan_Item_FenLei"
+        android:text="女子学院的男生" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:id="@+id/ZhuiFan_Item_FenLei"
+        style="@style/ZuiFan_Item_FenLei_TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ZhuiFan_Item_Img"
+        android:background="@drawable/zhuifan_item_shape"
+        android:text="少年" />
+
+    <ImageView
+        android:id="@+id/ZhuiFan_Item_Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/img_error_9"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:text="第123话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZhuiFan_Item_NowZhangJie"
+        android:layout_below="@+id/ZhuiFan_Item_ZhangJie"
+        android:layout_alignStart="@+id/ZhuiFan_Item_FenLei"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/zan"
+        android:layout_marginEnd="44dp"
+        android:id="@+id/ZhuiFan_Item_zan_ImageView"
+        android:layout_alignBottom="@+id/ZhuiFan_Item_NowZhangJie"
+        android:layout_toStartOf="@+id/ZhuiFan_Item_ZhangJie" />
+
+    <TextView
+        android:text="25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZhuiFan_Item_zan_TextView"
+        android:layout_alignTop="@+id/ZhuiFan_Item_zan_ImageView"
+        android:layout_alignStart="@+id/ZhuiFan_Item_zan_ImageView"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:text="256"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZhuiFan_Item_PingLunShu"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/ZhuiFan_Item_PingLun"
+        android:layout_toEndOf="@+id/ZhuiFan_Item_PingLun" />
+
+    <TextView
+        android:id="@+id/ZhuiFan_Item_ZhangJie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/zhuifan_item_hollowshape"
+        android:textSize="12sp"
+        android:text="全集"
+        android:layout_below="@+id/ZhuiFan_Item_Img"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qipao"
+        android:id="@+id/ZhuiFan_Item_PingLun"
+        android:layout_alignTop="@+id/ZhuiFan_Item_zan_TextView"
+        android:layout_toStartOf="@+id/ZhuiFan_Item_ZhangJie" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+
+android:layout_gravity=""
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/FenLei_Item_Img"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img_error_9"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:text="分类描述（没有就算）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/FenLei_Item_Img"
+        android:layout_toEndOf="@+id/FenLei_Item_Img" />
+
+    <TextView
+        android:textSize="18sp"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FenLen_Item_FenLei"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/FenLei_Item_Img" />
+
+</RelativeLayout>

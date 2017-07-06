@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/ZuiFan_Item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ZuiFan_Item_Img"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ZuiFan_Item_FenLei"
+        android:text="女子学院的男生"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:id="@+id/ZuiFan_Item_FenLei"
+        style="@style/ZuiFan_Item_FenLei_TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ZuiFan_Item_Img"
+        android:background="@drawable/zuifan_item_shape"
+        android:text="少年"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/ZuiFan_Item_Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="第123话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZuiFan_Item_NowZhangJie"
+        android:layout_below="@+id/ZuiFan_Item_ZhangJie"
+        android:layout_alignStart="@+id/ZuiFan_Item_FenLei"
+        android:layout_marginTop="11dp"
+        android:layout_alignLeft="@+id/ZuiFan_Item_FenLei" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/zan"
+        android:layout_marginEnd="44dp"
+        android:id="@+id/ZuiFan_Item_zan_ImageView"
+        android:layout_alignBottom="@+id/ZuiFan_Item_NowZhangJie"
+        android:layout_toStartOf="@+id/ZuiFan_Item_ZhangJie"
+        android:layout_marginRight="44dp"
+        android:layout_toLeftOf="@+id/ZuiFan_Item_ZhangJie" />
+
+    <TextView
+        android:text="25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZuiFan_Item_zan_TextView"
+        android:layout_alignTop="@+id/ZuiFan_Item_zan_ImageView"
+        android:layout_alignStart="@+id/ZuiFan_Item_zan_ImageView"
+        android:layout_marginStart="20dp"
+        android:layout_alignLeft="@+id/ZuiFan_Item_zan_ImageView"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qipao"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/ZuiFan_Item_zan_TextView"
+        android:layout_toLeftOf="@+id/ZuiFan_Item_ZhangJie"
+        android:layout_toStartOf="@+id/ZuiFan_Item_ZhangJie" />
+
+    <TextView
+        android:text="256"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZuiFan_Item_PingLunShu"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignRight="@+id/ZuiFan_Item_ZhangJie"
+        android:layout_alignEnd="@+id/ZuiFan_Item_ZhangJie" />
+
+    <TextView
+        android:id="@+id/ZuiFan_Item_ZhangJie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/zuifan_item_hollowshape"
+        android:textSize="12sp"
+        android:text="全集"
+        android:layout_below="@+id/ZuiFan_Item_Img"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp" />
+</RelativeLayout>

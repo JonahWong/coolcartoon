@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fenleileibiao_item_RecyclerView_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/fenleileibiao_item_RecyclerView_img"
+        android:layout_marginStart="20dp"
+        android:id="@+id/fenleileibiao_item_RecyclerView_name" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fenleileibiao_item_RecyclerView_name"
+        android:layout_alignStart="@+id/fenleileibiao_item_RecyclerView_name"
+        android:id="@+id/fenleileibiao_item_RecyclerView_author" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fenleileibiao_item_RecyclerView_author"
+        android:layout_alignStart="@+id/fenleileibiao_item_RecyclerView_author"
+        android:id="@+id/fenleileibiao_item_RecyclerView_fenlei" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fenleileibiao_item_RecyclerView_paiming"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

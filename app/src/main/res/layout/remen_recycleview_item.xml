@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/ReMen_RecycleView_Item_Img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img_error_9"/>
+    <TextView
+        android:id="@+id/ReMen_RecycleView_Item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="盗墓笔记"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReMen_RecycleView_Item_author"
+        android:text="南派三叔"/>
+</LinearLayout>
