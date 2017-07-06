@@ -4,5 +4,19 @@
     <string name="title_home">首页</string>
     <string name="title_community">社区</string>
     <string name="title_shelf">书橱</string>
-    <string name="title_me">我的</string>
+
+    <!--MineFragment-->
+    <string name="un">我的</string>
+    <string name="mine_item1">0</string>
+    <string name="mine_item2">VIP特权</string>
+    <string name="mine_item3">杂货铺</string>
+    <string name="mine_item4">帖子背景</string>
+    <string name="mine_item5">任务</string>
+    <string name="mine_item6">精品游戏</string>
+    <string name="mine_item7">好评有礼</string>
+    <string name="mine_item8">夜间模式</string>
+    <string name="mine_item9">设置</string>
+    <string name="contentDescription">fuck</string>
+    <!--这段是我的，不许改！！！-->
+
 </resources>
