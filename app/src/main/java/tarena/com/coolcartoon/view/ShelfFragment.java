@@ -27,6 +27,10 @@ import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
 import tarena.com.coolcartoon.R;
+import tarena.com.coolcartoon.Shelf.HistoryFragment;
+import tarena.com.coolcartoon.Shelf.LocalFragment;
+import tarena.com.coolcartoon.Shelf.ShelfPagerAdapter;
+import tarena.com.coolcartoon.Shelf.SubscribeFragment;
 import tarena.com.coolcartoon.biz.CoolCartoonApi;
 import tarena.com.coolcartoon.view.interfaces.ShelfView;
 
@@ -46,6 +50,7 @@ public class ShelfFragment extends Fragment implements ShelfView {
     private View view;
     private ViewPager mViewPager;
     private Fragment[] fragments = new Fragment[3];
+    private ShelfPagerAdapter shelfPagerAdapter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,6 +68,11 @@ public class ShelfFragment extends Fragment implements ShelfView {
     }
     private void initView() {
         mViewPager = view.findViewById(R.id.vp_shelffragment);
+        fragments[0] = new HistoryFragment();
+        fragments[1] = new SubscribeFragment();
+        fragments[2] = new LocalFragment();
+        shelfPagerAdapter = new ShelfPagerAdapter(fragments);
+        mViewPager.setAdapter(shelfPagerAdapter);
     }
     private void initMagicIndicator3() {
         MagicIndicator magicIndicator = (MagicIndicator) view.findViewById(R.id.magic_indicator3);
