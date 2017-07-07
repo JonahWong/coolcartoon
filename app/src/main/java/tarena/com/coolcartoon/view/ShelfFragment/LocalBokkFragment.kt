@@ -13,12 +13,9 @@ import tarena.com.coolcartoon.R
  * 本地书籍
  */
 class LocalBokkFragment : Fragment() {
-
-
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         return inflater!!.inflate(R.layout.fragment_history, container, false)
     }
 
-}// Required empty public constructor
+}
