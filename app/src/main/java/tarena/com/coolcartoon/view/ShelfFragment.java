@@ -73,6 +73,7 @@ public class ShelfFragment extends Fragment implements ShelfView {
         fragments[2] = new LocalFragment();
         shelfPagerAdapter = new ShelfPagerAdapter(fragments);
         mViewPager.setAdapter(shelfPagerAdapter);
+        mViewPager.setCurrentItem(1);
     }
     private void initMagicIndicator3() {
         MagicIndicator magicIndicator = (MagicIndicator) view.findViewById(R.id.magic_indicator3);
