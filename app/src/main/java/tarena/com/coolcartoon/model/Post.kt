@@ -1,5 +1,7 @@
 package tarena.com.coolcartoon.model
 
+import cn.bmob.v3.BmobObject
+
 /**
  * 帖子实体类
  * Created by tarena on 2017/7/5.
@@ -24,4 +26,4 @@ data class Post(
         /**
          * 帖子图片的集合（图片路径字符串拼接）
          */
-        var imgs:String)
+        var imgs:String):BmobObject()
