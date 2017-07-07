@@ -18,6 +18,7 @@ public class ShaoNvRecycleViewAdapter extends RecyclerView.Adapter<ShaoNvRecycle
 
     private Context mContext;
 
+
     public ShaoNvRecycleViewAdapter(Context context){
         this.mContext = context;
     }

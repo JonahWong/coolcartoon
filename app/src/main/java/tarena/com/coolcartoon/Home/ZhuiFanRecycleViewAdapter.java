@@ -8,7 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
+
 import tarena.com.coolcartoon.R;
+import tarena.com.coolcartoon.model.Book;
+import tarena.com.coolcartoon.model.ResultEntity;
 
 /**
  * Created by tarena on 2017/7/5.
@@ -17,9 +23,14 @@ import tarena.com.coolcartoon.R;
 public class ZhuiFanRecycleViewAdapter extends RecyclerView.Adapter<ZhuiFanRecycleViewAdapter.ViewHolder> {
 
     private Context mContext;
+    private ResultEntity mResultEntity;
+    private ArrayList<Book> books = mResultEntity.getBookList();
+    private OntoBookContentListener listener;
 
-    public ZhuiFanRecycleViewAdapter(Context context){
+    public ZhuiFanRecycleViewAdapter(ResultEntity mResultEntity,Context context,OntoBookContentListener listener){
+        this.mResultEntity = mResultEntity;
         this.mContext = context;
+        this.listener = listener;
     }
 
     @Override
@@ -31,12 +42,40 @@ public class ZhuiFanRecycleViewAdapter extends RecyclerView.Adapter<ZhuiFanRecyc
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        final Book book = books.get(position);
+
+        Glide.with(mContext).load(book.getCoverImg()).into(holder.ZuiFan_Item_Img);
+        //书名
+        holder.ZuiFan_Item_Name.setText(book.getName());
+        //分类
+        holder.ZuiFan_Item_FenLei.setText(book.getType());
+        //全集，是否完结
+        if (book.getFinish()){
+            holder.ZuiFan_Item_ZhangJie.setText("完结");
+        }else {
+            holder.ZuiFan_Item_ZhangJie.setText("连载");
+        }
+
+
+        //TODO 点赞，评论 ---从数据库中取
+
+        //点击item上的图片进入到具体的漫画列表
+        holder.ZuiFan_Item_Img.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                if (listener != null){
+                    listener.toBookContent(book.getName());
+                }
+            }
+        });
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return books != null?books.size():0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -60,4 +99,14 @@ public class ZhuiFanRecycleViewAdapter extends RecyclerView.Adapter<ZhuiFanRecyc
             ZuiFan_Item_PingLunShu=itemView.findViewById(R.id.ZhuiFan_Item_PingLunShu);
         }
     }
+
+    public void notifyDataSetChanged(ArrayList<Book> books){
+        this.books = books;
+        notifyDataSetChanged();
+    }
+
+    public interface OntoBookContentListener{
+        void toBookContent(String bookName);
+    }
+
 }

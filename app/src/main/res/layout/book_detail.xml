@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_bookdetail"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+
 
     <RelativeLayout
         android:id="@+id/ll_title"
@@ -28,12 +24,12 @@
             android:id="@+id/iv_download"
             android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
             android:layout_marginEnd="12dp"
-            android:layout_toStartOf="@+id/iv_share"
             android:background="@drawable/detailspage_btn_download"
             android:padding="12dp"
-            android:src="@drawable/titlebar_download_normal" />
+            android:src="@drawable/titlebar_download_normal"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/iv_share" />
 
         <ImageView
             android:id="@+id/iv_share"
@@ -46,6 +42,13 @@
             android:src="@drawable/titlebar_share_normal" />
 
     </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bookdetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
     <LinearLayout
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
@@ -72,4 +75,6 @@
             android:layout_width="0dp"
             android:layout_height="match_parent" />
     </LinearLayout>
-</FrameLayout>
+
+
+</LinearLayout>
