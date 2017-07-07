@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        android:src="@drawable/itemsrc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="164dp"
+        android:background="#bbffffff">
+
+        <TextView
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="非人哉"
+            android:id="@+id/tv_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/tv_book_name"
+            android:textColor="#ff656a"
+            android:text="9.529"
+            android:id="@+id/tv_book_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginEnd="6dp"
+            android:layout_toLeftOf="@id/tv_author"
+            android:id="@+id/iv_sex"
+            android:layout_width="24dp"
+            android:src="@drawable/avatar_35"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="一汪空气/什么鬼工作室"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <RadioButton
+            android:gravity="center"
+            android:text="详情"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:textColor="#ff656a"
+            android:gravity="center"
+            android:text="倒序"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:gravity="center"
+            android:text="讨论区（306）"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+
+</FrameLayout>
