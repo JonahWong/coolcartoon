@@ -3,6 +3,10 @@
     <color name="colorPrimary">#f9646e</color>
     <color name="colorPrimaryDark">#f9646e</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="Violet">#EE82EE</color>
     <color name="bg">#eceaeb</color>
     <color name="line_bg">#ffd5d5d5</color>
 </resources>
