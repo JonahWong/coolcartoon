@@ -27,10 +27,10 @@ import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
 import tarena.com.coolcartoon.R;
-import tarena.com.coolcartoon.Shelf.HistoryFragment;
-import tarena.com.coolcartoon.Shelf.LocalFragment;
-import tarena.com.coolcartoon.Shelf.ShelfPagerAdapter;
-import tarena.com.coolcartoon.Shelf.SubscribeFragment;
+import tarena.com.coolcartoon.shelf.HistoryFragment;
+import tarena.com.coolcartoon.shelf.LocalFragment;
+import tarena.com.coolcartoon.shelf.ShelfPagerAdapter;
+import tarena.com.coolcartoon.shelf.SubscribeFragment;
 import tarena.com.coolcartoon.biz.CoolCartoonApi;
 import tarena.com.coolcartoon.view.interfaces.ShelfView;
 
