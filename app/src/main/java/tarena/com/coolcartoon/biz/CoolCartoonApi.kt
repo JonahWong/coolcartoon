@@ -7,6 +7,7 @@ import tarena.com.coolcartoon.BuildConfig
 import tarena.com.coolcartoon.model.ChapterComics
 import tarena.com.coolcartoon.model.responses.BookCategoryResponse
 import tarena.com.coolcartoon.model.responses.BookResultResponse
+import tarena.com.coolcartoon.model.responses.ChapterComicsResponse
 import tarena.com.coolcartoon.model.responses.ChapterResponse
 
 /**
@@ -21,10 +22,10 @@ interface CoolCartoonApi {
     fun chapters(@Query("comicName") comicName: String, @Query("skip") skip: Int = 0, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<ChapterResponse>
 
     @GET("book")
-    fun books(@Query("type") type: String, @Query("skip") skip: Int = 0, @Query("finish") finish: Int = -1, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<BookResultResponse>
+    fun books(@Query("type") type: String, @Query("skip") skip: Int = 1, @Query("finish") finish: Int = -1, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<BookResultResponse>
 
     @GET("chapterContent")
-    fun comicPix(@Query("comicName") comicName: String, @Query("id") chapterId: Int, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<ChapterComics>
+    fun comicPix(@Query("comicName") comicName: String, @Query("id") chapterId: Int, @Query("key") key: String = BuildConfig.COOL_CARTOON_KEY): Observable<ChapterComicsResponse>
 
 
 }

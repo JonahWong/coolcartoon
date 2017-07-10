@@ -5,6 +5,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import cn.bmob.v3.Bmob
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
@@ -60,13 +61,19 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector {
         false
     }
 
+    /*private val AppCompatActivity.viewFinder: AppCompatActivity.(Int) -> View?
+    get() = { findViewById(it) }*/
+
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         initBmob()
+
+//        viewFinder(this, R.id.container)
+
         /*val bookCategory = BookCategoryResponse(null)
         bookCategory.reason = ""
-        bookCategory.result = null*/
+        bookCategory.bookResult = null*/
         setContentView(R.layout.activity_main)
 
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
