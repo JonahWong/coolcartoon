@@ -21,6 +21,7 @@ class CartoonApp: Application(), HasActivityInjector{
 
     override fun onCreate() {
         super.onCreate()
+        //genggai
 
         DaggerAppComponent.builder()
                 .appModule(AppModule(this))
