@@ -1,4 +1,4 @@
-package tarena.com.coolcartoon.Shelf;
+package tarena.com.coolcartoon.shelf;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

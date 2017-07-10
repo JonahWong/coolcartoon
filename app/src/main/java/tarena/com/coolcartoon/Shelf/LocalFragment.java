@@ -1,4 +1,4 @@
-package tarena.com.coolcartoon.Shelf;
+package tarena.com.coolcartoon.shelf;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import tarena.com.coolcartoon.R;
 
 /**
+ * 本地书籍
  * Created by tarena on 2017/7/7.
  */
 

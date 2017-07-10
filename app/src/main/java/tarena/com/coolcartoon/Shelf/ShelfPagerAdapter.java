@@ -1,4 +1,4 @@
-package tarena.com.coolcartoon.Shelf;
+package tarena.com.coolcartoon.shelf;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;

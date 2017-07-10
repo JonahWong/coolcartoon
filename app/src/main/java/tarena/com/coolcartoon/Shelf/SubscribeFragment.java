@@ -1,4 +1,4 @@
-package tarena.com.coolcartoon.Shelf;
+package tarena.com.coolcartoon.shelf;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
